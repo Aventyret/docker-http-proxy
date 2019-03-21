@@ -1,6 +1,6 @@
 # docker-http-proxy
 
-## 1 Prepare host resolver
+## Prepare host resolver
 
 ```
 sudo mkdir -p /etc/resolver/
