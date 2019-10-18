@@ -2,8 +2,13 @@
 
 ## Prepare host resolver
 
+Make sure that the reolver folder exists.
 ```
 sudo mkdir -p /etc/resolver/
+```
+
+Create a docker resolver file.
+```
 cat << EOF | sudo tee /etc/resolver/docker
 nameserver 127.0.0.1
 port 19322
