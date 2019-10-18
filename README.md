@@ -30,7 +30,6 @@ docker run -d --restart=always \
 
 ```
 docker cp  http-proxy:/etc/nginx/certs/local.docker.crt /tmp/
-cd /tmp/
 sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /tmp/local.docker.crt
 ```
 
