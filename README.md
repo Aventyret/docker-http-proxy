@@ -21,7 +21,7 @@ EOF
 docker run -d --restart=always \
   -v /var/run/docker.sock:/tmp/docker.sock:ro \
   -p 80:80 -p 443:443 -p 19322:19322/udp \
-  -e DNS_IP=127.0.0.1 -e CONTAINER_NAME=http-proxy  \
+  -e DNS_IP=127.0.0.1 -e CONTAINER_NAME=http-proxy  -e HTTPS_METHOD=noredirect \
   --name http-proxy \
   aventyret/docker-http-proxy
 ```
